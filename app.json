@@ -8,12 +8,14 @@
     "whatsapp-anime-bot"
   ],
   "logo": "https://raw.githubusercontent.com/AliAryanTech/Chisato-WhatsApp/master/assets/images/chisato.png",
-  "website": "https://github.com/7thRA-ONEh/Chisato-WhatsApp#readme",
-  "repository": "https://github.com/7thRA-ONE/Chisato-WhatsApp.git",
+  "website": "https://github.com/7thRA-ONE/Chisato-WhatsApp#readme",
+  "repository": {
+    "url": "https://github.com/7thRA-ONE/Chisato-WhatsApp.git"
+  },
   "success_url": "/",
   "env": {
     "BOT_NAME": {
-        "description": "Name of your bot"
+      "description": "Name of your bot"
     },
     "PREFIX": {
       "description": "Prefix of your bot"
@@ -40,7 +42,8 @@
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     },
     {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+      "url": "https://github.com/interconnectit/heroku-buildpack-ffmpeg.git"
     }
   ]
 }
+
