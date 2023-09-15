@@ -17,12 +17,12 @@
     "postinstall": "yarn build"
   },
   "bugs": {
-    "url": "https://github.com/AliAryanTech/Chisato-WhatsApp/issues"
+    "url": "https://github.com/7thRA-ONE/Chisato-WhatsApp/issues"
   },
-  "homepage": "https://github.com/AliAryanTech/Chisato-WhatsApp",
+  "homepage": "https://github.com/7thRA-ONE/Chisato-WhatsApp",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AliAryanTech/Chisato-WhatsApp.git"
+    "url": "https://github.com/7thRA-ONE/Chisato-WhatsApp.git"
   },
   "dependencies": {
     "@adiwajshing/baileys": "npm:baileys",
