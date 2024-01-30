@@ -4,17 +4,14 @@
   "description": "A WhatsApp bot written in TypeScript using Baileys",
   "author": "Alι_Aryαɴ & Lucky Yambem",
   "main": "dist/bot.js",
-  "keywords": [
-    "bot",
-    "whatsapp",
-    "anime"
-  ],
+  "keywords": ["bot", "whatsapp", "anime"],
   "license": "AGPL-3.0",
   "scripts": {
+    "start": "npm run pm2memory",
     "format": "prettier --write --config .prettierrc.json \"src/**/*.ts\"",
-    "start": "node --max-old-space-size=4096 dist/bot.js",
-    "build": "yarn rimraf dist/ && yarn tsc -p .",
-    "postinstall": "yarn build"
+    "pm2memory": "pm2 start dist/bot.js --deep-monitoring --attach --name zero-two --max-memory-restart 700M",
+    "postinstall": "npm run build",
+    "build": "rimraf dist/ && tsc -p ."
   },
   "bugs": {
     "url": "https://github.com/7thRA-ONE/Chisato-WhatsApp/issues"
@@ -25,7 +22,7 @@
     "url": "https://github.com/7thRA-ONE/Chisato-WhatsApp.git"
   },
   "dependencies": {
-    "@adiwajshing/baileys": "npm:baileys",
+    "@adiwajshing/baileys": "git+https://github.com/A-d-i-t-h-y-a-n/Baileys.js.git",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@hapi/boom": "^10.0.0",
     "@shineiichijo/canvas-chan": "^1.0.1",
@@ -33,6 +30,7 @@
     "@shineiichijo/nhentai-ts": "^1.0.0",
     "@typegoose/typegoose": "^10.0.0",
     "axios": "^0.27.2",
+    "baileysjs": "^6.2.2",
     "canvacord": "^5.4.8",
     "chalk": "4.1.1",
     "cheerio": "^1.0.0-rc.12",
@@ -67,7 +65,8 @@
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
     "eslint": "^8.29.0",
-    "typescript": "^4.9.4"
+    "rimraf": "^5.0.5",
+    "typescript": "^4.9.5"
   },
   "engines": {
     "node": "18.x"

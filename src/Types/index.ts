@@ -1,4 +1,4 @@
-import Baileys, { GroupMetadata, ParticipantAction } from '@adiwajshing/baileys'
+import Baileys, { GroupMetadata, ParticipantAction } from 'baileysjs'
 
 export * from './Config'
 export * from './Command'

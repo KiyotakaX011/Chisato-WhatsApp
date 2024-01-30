@@ -1,4 +1,4 @@
-import { Contact } from '@adiwajshing/baileys'
+import { Contact } from 'baileysjs'
 import {
     userSchema,
     groupSchema,

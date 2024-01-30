@@ -1,5 +1,5 @@
 import { Triggered } from '@shineiichijo/canvas-chan'
-import { MessageType, proto } from '@adiwajshing/baileys'
+import { MessageType, proto } from 'baileysjs'
 import { Command, Message, BaseCommand } from '../../Structures'
 
 @Command('triggered', {

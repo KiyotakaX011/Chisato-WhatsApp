@@ -1,5 +1,5 @@
 import chalk from 'chalk'
-import { delay } from '@adiwajshing/baileys'
+import { delay } from 'baileysjs'
 import { Client } from '../Structures'
 import { IEvent } from '../Types'
 
